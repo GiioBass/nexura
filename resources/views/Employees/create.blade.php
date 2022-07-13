@@ -3,7 +3,10 @@
     <div class=" d-flex justify-content-center" style="width:100%;" >
         <div class="card  mt-5" style="width:60%;">
             <div class="card-body" >
-                <form class="d-flex justify-content-center" style="width:90%;">
+                <div class="mb-5">
+                    <h2 class="card-title">Crear empleado</h2>
+                </div>
+                <form class="" style="width:90%;">
                     <div class="row mb-3">
                         <label for="name" class="col-sm-2 col-form-label">Nombre</label>
                         <div class="col-sm-10">

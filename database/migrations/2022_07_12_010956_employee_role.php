@@ -13,7 +13,12 @@ class EmployeeRole extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('employee_role', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('employee_id')->constrained();
+            $table->foreignId('role_id')->constrained();
+            $table->timestamps();
+        });
     }
 
     /**
