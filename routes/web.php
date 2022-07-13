@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EmployeeController;
 use App\Http\Controllers\RoleController;
+use App\Http\Controllers\AreaController;
 use Illuminate\Support\Facades\Route;
 
 /*

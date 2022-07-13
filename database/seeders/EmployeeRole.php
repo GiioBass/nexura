@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class AreaSeeder extends Seeder
+class EmployeeRole extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,27 +14,32 @@ class AreaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('areas')->insert(
+        DB::table('employee_role')->insert(
             [
                 [
                     'id' => 1,
-                    'name' => 'Ingeniería'
+                    'employee_id' => 1,
+                    'role_id' => 4
                 ],
                 [
                     'id' => 2,
-                    'name' => 'Desarrollo de Negocio'
+                    'employee_id' => 1,
+                    'role_id' => 7
                 ],
                 [
                     'id' => 3,
-                    'name' => 'Proyectos'
+                    'employee_id' => 1,
+                    'role_id' => 2
                 ],
                 [
                     'id' => 4,
-                    'name' => 'Servicios'
+                    'employee_id' => 2,
+                    'role_id' => 1
                 ],
                 [
                     'id' => 5,
-                    'name' => 'Calidad'
+                    'employee_id' => 2,
+                    'role_id' => 2
                 ]
             ]
         );

@@ -18,9 +18,9 @@ class CreateEmployeesTable extends Migration
             $table->string('name', 255);
             $table->string('email', 255)->unique();
             $table->string('gender', 1);
-            $table->foreignId('area_id')->constrained();
-            $table->integer('bulletin', 11);
+            $table->integer('bulletin');
             $table->string('description');
+            $table->foreignId('area_id')->constrained('areas', 'id');
             $table->timestamps();
         });
     }

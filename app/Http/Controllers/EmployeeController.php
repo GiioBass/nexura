@@ -15,8 +15,8 @@ class EmployeeController extends Controller
      */
     public function index()
     {
-       
-        return view('Employees.index');
+       $employees = Employee::all();
+        return view('Employees.index', compact('employees'));
     }
 
     /**
@@ -82,6 +82,6 @@ class EmployeeController extends Controller
      */
     public function destroy(Employee $employee)
     {
-        //
+        dd($employee);
     }
 }
