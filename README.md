@@ -1,4 +1,4 @@
-Dar permisos a las carpetas storage/ y bootstrap/
+Permissions to the folders storage/ y bootstrap/
 chmod 777 -R storage bootstrap
 
 Run command:
